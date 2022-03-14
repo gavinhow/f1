@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import TopBar from "../../components/TopBar/TopBar";
+import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import useTranslation from "next-translate/useTranslation";
@@ -53,10 +53,8 @@ const FullWidthLayout = (props) => {
 			<noscript>
 				<div className="noscript">{t("localization:javascript")}</div>
 			</noscript>
-
-			<TopBar />
-
-			<Header showCTABar={props.showCTABar} year={props.year} />
+			<Navbar/>
+			<Header config={props.config} showCTABar={props.showCTABar} year={props.year} />
 
 			{props.children}
 

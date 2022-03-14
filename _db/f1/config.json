@@ -1,7 +1,6 @@
 {
 	"siteKey": "f1",
-	"url": "f1calendar.com",
-	"calendarCDN": "files-f1.motorsportcalendars.com",
+	"url": "localhost:3000",
 	"availableYears": [2018, 2019, 2020, 2021, 2022],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprint", "gp"],
 	"featuredSessions": ["gp"],

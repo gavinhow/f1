@@ -7,6 +7,7 @@ import useTranslation from "next-translate/useTranslation";
 
 const Layout = (props) => {
 	const {t, lang} = useTranslation();
+	const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 	return (
 		<>
@@ -56,7 +57,7 @@ const Layout = (props) => {
 
 			<TopBar />
 
-			<Header showCTABar={props.showCTABar} year={props.year} />
+			<Header config={config} showCTABar={props.showCTABar} year={props.year} />
 
 			<div className="max-w-screen-lg mx-auto font-sans px-2">
 				{props.children}

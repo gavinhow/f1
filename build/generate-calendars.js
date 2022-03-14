@@ -96,7 +96,7 @@ function generateCalendars(siteKey){
 	}
 	
 	// For each filename, create a ics file.
-	for (language of i18n.locales) {
+	for (let language of i18n.locales) {
 		// Create the folder in public...
 		let dir = `./static/${language}`;
 		
@@ -111,9 +111,9 @@ function generateCalendars(siteKey){
 		let i18nStrings = fs.readFileSync(`locales/${language}/localization.json`);
 		let localizedStrings = JSON.parse(i18nStrings);
 	
-		var languageFilesnames = language == "en" ? fileNames : localizedFilenames;
+		let languageFilesnames = language === "en" ? fileNames : localizedFilenames;
 	
-		for (request of languageFilesnames) {
+		for (let request of languageFilesnames) {
 			let sessionArray = request.split("_");
 			let alarmEnabled = request.includes("alarm");
 	

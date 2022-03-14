@@ -6,7 +6,7 @@
 			"latitude": 25.31319,
 			"longitude": 55.512081,
 			"round": 1,
-			"slug": "diriyah-eprix",
+			"slug": "diriyah-eprix-1",
 			"localeKey": "diriyah-eprix",
 			"sessions": {
 				"practice1": "2022-01-27T15:00:00Z",
@@ -21,7 +21,7 @@
 			"latitude": 25.31319,
 			"longitude": 55.512081,
 			"round": 2,
-			"slug": "diriyah-eprix",
+			"slug": "diriyah-eprix-2",
 			"localeKey": "diriyah-eprix",
 			"sessions": {
 				"practice3": "2022-01-29T10:30:00Z",
@@ -51,7 +51,7 @@
 			"longitude": 12.494953,
 			"round": 4,
 			"tbc": true,
-			"slug": "rome-eprix",
+			"slug": "rome-eprix-1",
 			"localeKey": "rome-eprix",
 			"sessions": {
 				"practice1": "2022-04-09T06:00:00Z",
@@ -67,7 +67,7 @@
 			"longitude": 12.494953,
 			"round": 5,
 			"tbc": true,
-			"slug": "rome-eprix",
+			"slug": "rome-eprix-2",
 			"localeKey": "rome-eprix",
 			"sessions": {
 				"practice3": "2022-04-10T05:00:00Z",
@@ -98,7 +98,7 @@
 			"longitude": 13.389437,
 			"tbc": true,
 			"round": 7,
-			"slug": "berlin-eprix",
+			"slug": "berlin-eprix-1",
 			"localeKey": "berlin-eprix",
 			"sessions": {
 				"practice1": "2022-05-14T12:00:00Z",
@@ -114,7 +114,7 @@
 			"longitude": 13.389437,
 			"tbc": true,
 			"round": 8,
-			"slug": "berlin-eprix",
+			"slug": "berlin-eprix-2",
 			"localeKey": "berlin-eprix",
 			"sessions": {
 				"practice1": "2022-05-15T12:00:00Z",
@@ -162,7 +162,7 @@
 			"longitude": -74.012724,
 			"tbc": true,
 			"round": 11,
-			"slug": "nyc-eprix",
+			"slug": "nyc-eprix-1",
 			"localeKey": "nyc-eprix",
 			"sessions": {
 				"practice1": "2022-07-16T12:00:00Z",
@@ -178,7 +178,7 @@
 			"longitude": -74.012724,
 			"tbc": true,
 			"round": 12,
-			"slug": "nyc-eprix",
+			"slug": "nyc-eprix-2",
 			"localeKey": "nyc-eprix",
 			"sessions": {
 				"practice1": "2022-07-17T12:00:00Z",
@@ -194,7 +194,7 @@
 			"longitude": -0.126240,
 			"tbc": true,
 			"round": 13,
-			"slug": "london-eprix",
+			"slug": "london-eprix-1",
 			"localeKey": "london-eprix",
 			"sessions": {
 				"practice1": "2022-07-30T12:00:00Z",
@@ -210,7 +210,7 @@
 			"longitude": -0.126240,
 			"tbc": true,
 			"round": 14,
-			"slug": "london-eprix",
+			"slug": "london-eprix-2",
 			"localeKey": "london-eprix",
 			"sessions": {
 				"practice1": "2022-07-31T12:00:00Z",
@@ -226,7 +226,7 @@
 			"longitude": 0,
 			"tbc": true,
 			"round": 15,
-			"slug": "seoul-eprix",
+			"slug": "seoul-eprix-1",
 			"localeKey": "seoul-eprix",
 			"sessions": {
 				"practice1": "2022-08-13T12:00:00Z",
@@ -242,7 +242,7 @@
 			"longitude": 0,
 			"tbc": true,
 			"round": 16,
-			"slug": "seoul-eprix",
+			"slug": "seoul-eprix-2",
 			"localeKey": "seoul-eprix",
 			"sessions": {
 				"practice1": "2022-08-14T12:00:00Z",

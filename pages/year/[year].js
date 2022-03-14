@@ -3,10 +3,13 @@ import Races from "components/Races/Races";
 import {NextSeo} from "next-seo";
 import useTranslation from "next-translate/useTranslation";
 import OptionsBar from "components/OptionsBar/OptionsBar";
+import Layout from "components/Layout/Layout";
 
 const Year = (props) => {
 	const {t} = useTranslation();
-	
+	const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+
+
 	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
 		year: props.year
 	});
@@ -54,14 +57,14 @@ const Year = (props) => {
 				description={description}
 				keywords={keywords}
 			/>
-			<FullWidthLayout showOptions="true" year={props.year}>
+			<FullWidthLayout config={config} showOptions="true" year={props.year}>
 				<div className="max-w-screen-lg mx-auto font-sans">
 					<div className="px-2">
 						<OptionsBar />
 					</div>
 
 					<div className="px-0 md:px-2">
-						<Races year={props.year} races={props.races} />
+						<Races config={config} year={props.year} races={props.races} />
 					</div>
 				</div>
 			</FullWidthLayout>

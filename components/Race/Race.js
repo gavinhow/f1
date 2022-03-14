@@ -49,6 +49,7 @@ class Race extends React.Component {
 
 	render() {
 		const {t, lang} = this.props.i18n;
+		const config = this.props.config;
 		const localeKey = "localization:races." + this.props.item.localeKey;
 
 		const hasMultipleFeaturedEvents = config.featuredSessions.length !== 1;
@@ -168,10 +169,10 @@ class Race extends React.Component {
 					keys.splice(keys.indexOf(config.featuredSessions[0]), 1);
 				}
 
-				keys.forEach(function (session, index) {					
+				keys.forEach(function (session, index) {
 					rows.push(
 						<RaceTR
-							key={props.item.localeKey}
+							key={props.item.slug + session}
 							date={props.item.sessions[session]}
 							title={session}
 							timezone={props.timezone}

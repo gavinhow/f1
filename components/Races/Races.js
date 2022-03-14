@@ -3,7 +3,6 @@ import {UserContext} from "components/UserContext";
 import dayjs from "dayjs";
 import Race from "components/Race/Race";
 import useTranslation from "next-translate/useTranslation";
-const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
 const Races = (props) => {
 	const {t} = useTranslation();
@@ -13,6 +12,7 @@ const Races = (props) => {
 	let {timezone, timeFormat, collapsePastRaces, updateCollapsePastRaces} = useContext(UserContext);
 
 	const races = props.races;
+	const config = props.config;
 
 	if (props.timezone) {
 		timezone = props.timezone;
@@ -141,6 +141,7 @@ const Races = (props) => {
 					return (
 						<Race
 							item={item}
+							config={config}
 							index={index}
 							timezone={timezone}
 							timeFormat={timeFormat}
