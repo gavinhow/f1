@@ -4,19 +4,18 @@ const Navbar = (props) => {
 
   const series = [
     {name: 'F1', url: '/f1'},
-    {name: 'F2', url: '/f2'},
-    {name: 'F3', url: '/f3'},
-    {name: 'Formula E', url: '/fe'},
-    {name: 'W Series', url: '/wseries'},
     {name: 'MotoGP', url: '/motogp'},
-    {name: 'Indycar', url: '/indycar'},
+    {name: 'WEC', url: '/wec'},
+    {name: 'BTCC', url: '/btcc'},
+    {name: 'BritishGT', url: '/britishgt'},
+
   ]
 
   return (
-    <div className={"max-w-screen-lg mx-auto font-sans flex text-2xl"}>
+    <div className={"max-w-screen-lg my-1 mx-auto font-sans flex text-2xl"}>
       {series.map(item => (
         <Link href={item.url} key={item.name}>
-          <a className={'mr-2'}>{item.name}</a>
+          <a className={'mr-2 hover:bg-red-500 px-3 py-2 rounded-md'}>{item.name}</a>
         </Link>))
       }
     </div>

@@ -1,0 +1,134 @@
+{
+  "races": [
+    {
+      "name": "Donington Park",
+      "location": "Donington Park",
+      "latitude": 52.830,
+      "longitude": -1.378,
+      "round": 1,
+      "tbc": true,
+      "slug": "donington-grand-prix",
+      "localeKey": "donington-grand-prix",
+      "sessions": {
+        "race1": "2022-04-24T11:00:00Z"
+      }
+    },
+    {
+      "name": "Brands Hatch Indy",
+      "location": "Brands Hatch",
+      "latitude": 51.358,
+      "longitude": 0.255,
+      "round": 2,
+      "tbc": true,
+      "slug": "btcc-brands-hatch-indy",
+      "localeKey": "btcc-brands-hatch-indy",
+      "sessions": {
+        "race1": "2022-05-15T11:00:00Z"
+      }
+    },
+    {
+      "name": "Thruxton",
+      "location": "Thruxton",
+      "latitude": 51.206,
+      "longitude": -1.608,
+      "round": 3,
+      "tbc": true,
+      "slug": "btcc-thruxton-1",
+      "localeKey": "btcc-thruxton",
+      "sessions": {
+        "race1": "2022-05-29T11:00:00Z"
+      }
+    },
+    {
+      "name": "Oulton Park",
+      "location": "Oulton Park",
+      "latitude": 53.181,
+      "longitude": -2.616,
+      "round": 4,
+      "tbc": true,
+      "slug": "btcc-oulton",
+      "localeKey": "btcc-oulton",
+      "sessions": {
+        "race1": "2022-06-12T11:00:00Z"
+      }
+    },
+    {
+      "name": "Croft",
+      "location": "Croft",
+      "latitude": 54.455,
+      "longitude": -1.555,
+      "round": 5,
+      "tbc": true,
+      "slug": "btcc-croft",
+      "localeKey": "btcc-croft",
+      "sessions": {
+        "race1": "2022-06-26T11:00:00Z"
+      }
+    },
+    {
+      "name": "Knockhill",
+      "location": "Knockhill",
+      "latitude": 56.13152799915907,
+      "longitude": -3.5086785645987835,
+      "round": 6,
+      "tbc": true,
+      "slug": "btcc-knockhill",
+      "localeKey": "btcc-knockhill",
+      "sessions": {
+        "race1": "2022-07-31T11:00:00Z"
+      }
+    },
+    {
+      "name": "Snetterton",
+      "location": "Snetterton",
+      "latitude": 52.463,
+      "longitude": 0.944,
+      "round": 7,
+      "tbc": true,
+      "slug": "btcc-snetterton",
+      "localeKey": "btcc-snetterton",
+      "sessions": {
+        "race1": "2022-08-14T11:00:00Z"
+      }
+    },
+    {
+      "name": "Thruxton",
+      "location": "Thruxton",
+      "latitude": 51.206,
+      "longitude": -1.608,
+      "round": 8,
+      "tbc": true,
+      "slug": "btcc-thruxton-2",
+      "localeKey": "btcc-thruxton",
+      "sessions": {
+        "race1": "2022-08-28T11:00:00Z"
+      }
+    },
+    {
+      "name": "Silverstone National",
+      "location": "Silverstone",
+      "latitude": 52.073,
+      "longitude": -1.014,
+      "round": 9,
+      "tbc": true,
+      "slug": "btcc-silverstone",
+      "localeKey": "btcc-silverstone",
+      "sessions": {
+        "race1": "2022-09-25T11:00:00Z"
+      }
+    },
+    {
+      "name": "Brands Hatch GP",
+      "location": "Brands Hatch",
+      "latitude": 51.358,
+      "longitude": 0.255,
+      "round": 10,
+      "tbc": true,
+      "slug": "btcc-brands-hatch-gp",
+      "localeKey": "btcc-brands-hatch-gp",
+      "sessions": {
+        "race1": "2022-10-09T11:00:00Z"
+      }
+    }
+  ]
+}

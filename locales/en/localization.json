@@ -213,5 +213,35 @@
 			"keywords": "Extreme E, race times, races, reminder, alerts, x prix, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
 		},
 		"footnote": ""
+	},
+	"wec": {
+		"title": "World Endurance Championship Calendar",
+		"subtitle": "Races, Qualifying & Practice Sessions",
+		"seo": {
+			"title": "World Endurance Championship Calendar {{year}} - WEC Race Times and Dates",
+			"description": "World Endurance Championship Calendar for {{year}} season with all WEC races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "World Endurance Championship, WEC, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		},
+		"footnote": ""
+	},
+	"btcc": {
+		"title": "British Touring Car Championship Calendar",
+		"subtitle": "Races, Qualifying & Practice Sessions",
+		"seo": {
+			"title": "British Touring Car Championship Calendar {{year}} - BTCC Race Times and Dates",
+			"description": "British Touring Car Championship Calendar for {{year}} season with all BTCC races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "British Touring Car Championship Calendar, BTCC, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		},
+		"footnote": ""
+	},
+	"britishgt": {
+		"title": "British GT Championship Calendar",
+		"subtitle": "Races, Qualifying & Practice Sessions",
+		"seo": {
+			"title": "British GT Championship Calendar {{year}} - BritishGT Race Times and Dates",
+			"description": "British GT Championship Calendar for {{year}} season with all BritishGT races, practice &amp; qualifying sessions. Set reminders feature. All world timezones. Download or subscribe.",
+			"keywords": "British GT Championship Calendar, BritishGT, race times, races, reminder, alerts, calendar, dates, start times, qualifying, practice, London, Europe, {{year}}"
+		},
+		"footnote": ""
 	}
 }

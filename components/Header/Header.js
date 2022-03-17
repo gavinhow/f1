@@ -1,16 +1,11 @@
-import React, {Component} from "react";
+import React from "react";
 import Logo from "../Logo/Logo";
-import withTranslation from "next-translate/withTranslation";
 import i18nConfig from "../../i18n.json";
-import Router from "next/router";
 import CTABar from "../CTABar/CTABar";
 import Link from "next/link";
-import {usePlausible} from "next-plausible";
 import useTranslation from "next-translate/useTranslation";
 
 export default function Header(props) {
-    const plausible = usePlausible();
-
     const config = props.config;
 
     const {t, lang} = useTranslation();
@@ -64,32 +59,10 @@ export default function Header(props) {
                             </h2>
                         </div>
                     </div>
-                    <div className="hidden md:inline-block">
-                        <a
-                            href="https://www.buymeacoffee.com/f1cal"
-                            className="support-btn mt-3"
-                            onClick={() =>
-                                plausible("Support", {
-                                    props: {
-                                        buttonId: "header"
-                                    }
-                                })
-                            }
-                        >
-                            <img
-                                src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-                                width="15"
-                                height="15"
-                                className="mr-2"
-                                alt="buymeacoffee"
-                            />
-                            {t("localization:footer.coffee")}
-                        </a>
-                    </div>
                 </div>
-                <div className="clear-both"></div>
+                <div className="clear-both"/>
 
-                {props.showCTABar && <CTABar/>}
+                {props.showCTABar && <CTABar config={config}/>}
 
                 { /*
 					<div className="md:hidden fixed right-4 bottom-4 z-50" >

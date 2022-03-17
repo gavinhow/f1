@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../Footer/Footer";
 import useTranslation from "next-translate/useTranslation";
 
 const FullWidthLayout = (props) => {

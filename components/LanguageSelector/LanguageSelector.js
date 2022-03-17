@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import withTranslation from "next-translate/withTranslation";
 import i18nConfig from "../../i18n.json";
 import Router from "next/router";
@@ -12,7 +12,7 @@ class LanguageSelector extends React.Component {
 			return;
 		}
 
-		let adjustedURL = Router.pathname;
+		let adjustedURL = Router.asPath;
 
 		if (
 			this.props != null &&
@@ -22,7 +22,7 @@ class LanguageSelector extends React.Component {
 			adjustedURL = adjustedURL.replace("/" + this.props.i18n.lang, "");
 		}
 
-		if (adjustedURL == "") {
+		if (adjustedURL === "") {
 			adjustedURL = "/";
 		}
 
@@ -30,6 +30,7 @@ class LanguageSelector extends React.Component {
 			adjustedURL = "/timezones/";
 		}
 
+		console.log(adjustedURL);
 		Router.push(adjustedURL, adjustedURL, {locale: event.target.value});
 
 		const plausible = usePlausible();
@@ -72,7 +73,6 @@ class LanguageSelector extends React.Component {
 				<select
 					id={this.props.id}
 					name="language"
-					value={lang}
 					onChange={this.onChange}
 					value={lang}
 					className="mx-2 text-gray-900 pl-3 pr-10 py-0 text-base

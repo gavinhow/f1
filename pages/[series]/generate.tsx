@@ -1,30 +1,33 @@
 import {useState} from "react";
-import Layout from "components/Layout/Layout";
+import Layout from "../../components/Layout/Layout";
 import {NextSeo} from "next-seo";
 import useTranslation from "next-translate/useTranslation";
-import Card from "components/Card/Card";
+import Card from "../../components/Card/Card";
 import {usePlausible} from "next-plausible";
 
 function Generate(props) {
 	const {t, lang} = useTranslation();
+	const site_key = props.site_key;
+
 	const currentYear = process.env.NEXT_PUBLIC_CURRENT_YEAR;
 	const plausible = usePlausible();
 
-	const title = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.title`, {
+	const title = t(`localization:${site_key}.seo.title`, {
 		year: currentYear
 	});
-	const description = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.description`,
+	const description = t(`localization:${site_key}.seo.description`,
 		{
 			year: currentYear
 		}
 	);
-	const keywords = t(`localization:${process.env.NEXT_PUBLIC_SITE_KEY}.seo.keywords`, {
+	const keywords = t(`localization:${site_key}.seo.keywords`, {
 		year: currentYear
 	});
 
-	const config = require(`../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
+	const baseConfig = require(`../../_db/f1/config.json`);
+	const siteConfig = require(`../../_db/${site_key}/config.json`);
 
-	var sessions = config.sessions;
+	var sessions = siteConfig.sessions;
 	
 	// Default form values...
 	var defaults = {
@@ -46,8 +49,8 @@ function Generate(props) {
 	const handleOnSubmit = async (e) => {
 		e.preventDefault();
 
-		const sessions = config.sessions;
-		const sessionMap = config.sessionMap;
+		const sessions = siteConfig.sessions;
+		const sessionMap = siteConfig.sessionMap;
 
 		// Check if non of the sessions are selected...
 		let sessionSelected = false;
@@ -87,37 +90,37 @@ function Generate(props) {
 			props: plausibleProps
 		});
 
-		var calendarBaseURL = config.url + "/download";
-		if(config.calendarCDN){
-			calendarBaseURL = config.calendarCDN;
+		var calendarBaseURL = baseConfig.url + "/download";
+		if(baseConfig.calendarCDN){
+			calendarBaseURL = baseConfig.calendarCDN;
 		}
 
 		if (lang != "en") {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				webcalURL: `webcal://${calendarBaseURL}/${lang}/${site_key}-calendar${calendarSuffix}.ics`,
 				googleURL: `https://${calendarBaseURL}/${lang}/${
-					process.env.NEXT_PUBLIC_SITE_KEY
+					site_key
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${calendarBaseURL}/${lang}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${lang}/${site_key}-calendar${calendarSuffix}.ics`
 			});
 		} else {
 			setState({
 				...form,
 				submitted: true,
-				webcalURL: `webcal://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`,
+				webcalURL: `webcal://${calendarBaseURL}/${site_key}-calendar${calendarSuffix}.ics`,
 				googleURL: `https://${calendarBaseURL}/${
-					process.env.NEXT_PUBLIC_SITE_KEY
+					site_key
 				}-calendar${calendarSuffix}.ics?t=${Date.now()}`,
-				downloadURL: `https://${calendarBaseURL}/${process.env.NEXT_PUBLIC_SITE_KEY}-calendar${calendarSuffix}.ics`
+				downloadURL: `https://${calendarBaseURL}/${site_key}-calendar${calendarSuffix}.ics`
 			});
 		}
 	};
 
 	return (
 		<>
-			<NextSeo title={title} description={description} keywords={keywords} />
+			<NextSeo title={title} description={description} />
 			<Layout year={currentYear}>
 				{form.submitted ? (
 					<>
@@ -238,7 +241,7 @@ function Generate(props) {
 													name={item}
 													id={item}
 													defaultValue="on"
-													defaultChecked="checked"
+													defaultChecked={true}
 													onChange={async event => {
 														setState({
 															...form,
@@ -287,12 +290,12 @@ function Generate(props) {
 											onChange={(event) =>
 												setState({
 													...form,
-													mins: event.target.value
+													mins: +event.target.value
 												})
 											}
 										>
 											<option value="0">0</option>
-											<option selected="selected" value="30">
+											<option selected={true} value="30">
 												30
 											</option>
 											<option value="60">60</option>
@@ -324,10 +327,24 @@ function Generate(props) {
 	);
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({params}) {
 	return {
-		revalidate: 3600
+		revalidate: 3600,
+		props: {
+			site_key: params.series
+		}
 	}
+
+
+}
+
+export async function getStaticPaths() {
+	return {
+		paths: [
+			{ params: { series: "f1" } }
+		],
+		fallback: 'blocking' // false or 'blocking'
+	};
 }
 
 export default Generate;

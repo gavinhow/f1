@@ -1,13 +1,11 @@
-import {useState, useContext, useEffect} from 'react';
-import UserContext from 'components/UserContext';
-import Layout from 'components/Layout/Layout'
-import Races from 'components/Races/Races';
+import Layout from '../../components/Layout/Layout'
+import Races from '../../components/Races/Races';
 import {NextSeo} from 'next-seo';
 import useTranslation from "next-translate/useTranslation";
-import RaceSchema from "components/RaceSchema/RaceSchema";
+import RaceSchema from "../../components/RaceSchema/RaceSchema";
 import Link from "next/link";
 import {useRouter} from 'next/router'
-import Notice from "components/Notice/Notice";
+import Notice from "../../components/Notice/Notice";
 
 const Timezone = (props) => {
   const router = useRouter()
@@ -29,7 +27,7 @@ const Timezone = (props) => {
   var timezone = props.timezone ? props.timezone.replace("-", "/") : "";
   var displayTimezone = timezone;
   
-  if(timezone == "Europe/Kyiv"){
+  if(timezone === "Europe/Kyiv"){
     timezone = "Europe/Kiev";
   }
   
@@ -65,7 +63,7 @@ const Timezone = (props) => {
             <Races year={currentYear} races={props.races} timezone={timezone}/>
             }
   
-            {props.races && config.siteKey == "f1" && props.races.map((item, index) => {
+            {props.races && config.siteKey === "f1" && props.races.map((item, index) => {
               if (item.sessions) {
                 return (<RaceSchema item={item} key={item.name}/>)
               }
@@ -94,7 +92,7 @@ export async function getStaticProps({params}) {
     const data = await res.json();
     
     let timezone = params.timezone;
-    if(timezone == "Europe/Kiev"){
+    if(timezone === "Europe/Kiev"){
       timezone = "Europe/Kyiv";
     }
 

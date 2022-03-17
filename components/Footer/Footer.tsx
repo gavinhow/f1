@@ -1,6 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
-import SiteSelector from "../../components/SiteSelector/SiteSelector";
 import {usePlausible} from "next-plausible";
 
 export default function Footer() {
@@ -14,11 +13,7 @@ export default function Footer() {
 					<div className="mt-1 mb-6 flex justify-center space-x-6">
 						<LanguageSelector id="languageSelector2" />
 					</div>
-					
-					<div className="mt-1 mb-6 flex justify-center space-x-6">
-						<SiteSelector id="siteSelector2" />
-					</div>
-	
+
 					<p className="mb-10 text-center text-base text-gray-400">
 						{ t('localization:footer.links.spottedIssue') } <a href="https://twitter.com/intent/tweet?text=%40f1cal%20I%20spotted%20an%20issue..." className="text-gray-300">{ t('localization:footer.links.spottedReport') }	</a>
 					</p>
@@ -62,27 +57,11 @@ export default function Footer() {
 					<p className="mt-8 text-center text-base text-gray-400">
 						&copy;{" "}
 						<a
-							href="https://andydev.co.uk"
+							href="https://gavinhow.com"
 							rel="author developer"
 							className="text-gray-300"
 						>
-							Andrew Yates
-						</a>
-						,&nbsp;
-						<a
-							href="https://andyhiggs.uk/"
-							rel="author designer"
-							className="text-gray-300"
-						>
-							Andy Higgs
-						</a>
-						,&nbsp;
-						<a
-							href="https://sijobling.com"
-							rel="author developer"
-							className="text-gray-300"
-						>
-							Si Jobling
+							Gavin How
 						</a>{" "}
 						{new Date().getFullYear()}
 					</p>

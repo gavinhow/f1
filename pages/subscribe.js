@@ -1,9 +1,8 @@
-import Layout from "components/Layout/Layout";
+import Layout from "../components/Layout/Layout";
 import { useState } from "react";
 import {NextSeo} from "next-seo";
-import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
-import Card from "components/Card/Card";
+import Card from "../components/Card/Card";
 import NextError from 'next/error'
 import {usePlausible} from "next-plausible";
 

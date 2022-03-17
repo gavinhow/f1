@@ -1,10 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import dayjs from "dayjs";
-import dayjsutc from "dayjs/plugin/utc";
-import dayjstimezone from "dayjs/plugin/timezone";
-const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
 
-class RaceTR extends React.Component {
+class RaceTR extends React.Component<any, any> {
 	render() {
 		const {t, lang} = this.props.i18n;
 
@@ -18,7 +15,6 @@ class RaceTR extends React.Component {
 		const titleKey = "localization:schedule." + this.props.title;
 
 		if (hasMultipleFeaturedEvents) {
-			var blankColumnCount = config.featuredSessions.length - 1;
 
 			return (
 				<tr className={`${this.props.collapsed ? "hidden" : ""}`}>

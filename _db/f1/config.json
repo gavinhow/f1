@@ -1,6 +1,7 @@
 {
 	"siteKey": "f1",
-	"url": "localhost:3000",
+	"url": "motorsport-calendar-89.s3.fr-par.scw.cloud",
+	"calendarCDN": "motorsport-calendar-89.s3.fr-par.scw.cloud",
 	"availableYears": [2018, 2019, 2020, 2021, 2022],
 	"sessions": ["fp1", "fp2", "fp3", "qualifying", "sprint", "gp"],
 	"featuredSessions": ["gp"],

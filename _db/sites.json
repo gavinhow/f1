@@ -6,39 +6,24 @@
       "siteKey": "f1"
     },
     {
-      "name": "F2",
-      "url": "https://f2cal.com",
-      "siteKey": "f2"
-    },
-    {
-      "name": "F3",
-      "url": "https://f3calendar.com",
-      "siteKey": "f3"
-    },
-    {
-      "name": "Formula E",
-      "url": "https://formulaecal.com",
-      "siteKey": "fe"
-    },
-    {
-      "name": "W Series",
-      "url": "https://wseriescal.com",
-      "siteKey": "wseries"
-    },
-    {
-      "name": "Extreme E",
-      "url": "https://extremeecalendar.com",
-      "siteKey": "extremee"
-    },
-    {
-      "name": "IndyCar",
-      "url": "https://indycarcalendar.com",
-      "siteKey": "indycar"
-    },
-    {
       "name": "MotoGP",
       "url": "https://motogpcal.com",
       "siteKey": "motogp"
+    },
+    {
+      "name": "WEC",
+      "url": "https://motogpcal.com",
+      "siteKey": "wec"
+    },
+    {
+      "name": "BTCC",
+      "url": "https://motogpcal.com",
+      "siteKey": "btcc"
+    },
+    {
+      "name": "BritishGT",
+      "url": "https://motogpcal.com",
+      "siteKey": "britishgt"
     }
   ]
 }

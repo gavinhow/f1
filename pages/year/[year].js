@@ -1,9 +1,9 @@
-import FullWidthLayout from "components/Layout/FullWidthLayout";
-import Races from "components/Races/Races";
+import FullWidthLayout from "../../components/Layout/FullWidthLayout";
+import Races from "../../components/Races/Races";
 import {NextSeo} from "next-seo";
 import useTranslation from "next-translate/useTranslation";
-import OptionsBar from "components/OptionsBar/OptionsBar";
-import Layout from "components/Layout/Layout";
+import OptionsBar from "../../components/OptionsBar/OptionsBar";
+import Layout from "../../components/Layout/Layout";
 
 const Year = (props) => {
 	const {t} = useTranslation();
@@ -89,7 +89,7 @@ export const getStaticProps = async ({params}) => {
 	const year = params.year;
 
 	const data = await import(
-		`_db/` + process.env.NEXT_PUBLIC_SITE_KEY + `/` + year + `.json`
+		`../../_db/` + process.env.NEXT_PUBLIC_SITE_KEY + `/` + year + `.json`
 	);
 
 	return {

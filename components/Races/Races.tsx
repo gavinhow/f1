@@ -1,7 +1,7 @@
 import {useContext} from "react";
-import {UserContext} from "components/UserContext";
+import {UserContext} from "../UserContext";
 import dayjs from "dayjs";
-import Race from "components/Race/Race";
+import Race from "../Race/Race";
 import useTranslation from "next-translate/useTranslation";
 
 const Races = (props) => {
@@ -22,9 +22,9 @@ const Races = (props) => {
 		timeFormat = props.timeFormat;
 	}
 
-	if (props.locale) {
-		locale = props.locale;
-	}
+	// if (props.locale) {
+	// 	locale = props.locale;
+	// }
 
 	let isNextRace = false;
 	let nextRace = null;
@@ -38,7 +38,7 @@ const Races = (props) => {
 				Object.keys(item.sessions).length - 1
 			];
 			
-			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore()) {
+			if (dayjs(item.sessions[lastEventSessionKey]).add(2, "hours").isBefore(dayjs())) {
 				racesOccured = racesOccured + 1;
 			}
 		}
@@ -124,7 +124,7 @@ const Races = (props) => {
 					}
 					
 					var hasOccured = false;
-					if(sessionDate.isBefore()){
+					if(sessionDate.isBefore(dayjs())){
 						hasOccured = true;
 					}
 					

@@ -1,7 +1,6 @@
-import MinimalLayout from "components/Layout/MinimalLayout";
-import Card from "components/Card/Card";
+import MinimalLayout from "../components/Layout/MinimalLayout";
+import Card from "../components/Card/Card";
 import React from "react";
-import Link from "next/link";
 
 const Maintenance = () => (
 	<>

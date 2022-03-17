@@ -1,0 +1,25 @@
+{
+	"siteKey": "wec",
+	"url": "localhost:3000",
+	"availableYears": [2022],
+	"sessions": ["fp1", "fp2", "fp3", "qualifying1", "qualifying2", "gp"],
+	"featuredSessions": ["gp"],
+	"collapsedSessions": ["fp1", "fp2", "fp3", "qualifying1", "qualifying2","sprint"],
+	"sessionMap": {
+		"fp1":"p1",
+		"fp2":"p2",
+		"fp3":"p3",
+		"qualifying1":"qualifying1",
+		"qualifying2":"qualifying2",
+		"gp":"gp"
+	},
+	"sessionLengths": {
+		"fp1":60,
+		"fp2":60,
+		"fp3":60,
+		"qualifying1":10,
+		"qualifying2":10,
+		"gp":360
+	},
+	"supportsEmailReminders": false
+}

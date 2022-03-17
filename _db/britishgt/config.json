@@ -1,0 +1,23 @@
+{
+	"siteKey": "britishgt",
+	"url": "localhost:3000",
+	"availableYears": [2022],
+	"sessions": ["fp1", "fp2", "qualifying", "race1", "race2"],
+	"featuredSessions": ["race1"],
+	"collapsedSessions": ["fp1", "fp2", "qualifying", "race1", "race2"],
+	"sessionMap": {
+		"fp1":"p1",
+		"fp2":"p2",
+		"qualifying":"qualifying",
+		"race1":"race1",
+		"race2":"race2"
+	},
+	"sessionLengths": {
+		"fp1":60,
+		"fp2":60,
+		"qualifying":40,
+		"race1": 60,
+		"race2": 60
+	},
+	"supportsEmailReminders": false
+}

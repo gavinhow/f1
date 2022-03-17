@@ -1,9 +1,9 @@
 import useTranslation from "next-translate/useTranslation";
 import {NextSeo} from "next-seo";
-import FullWidthLayout from "components/Layout/FullWidthLayout";
-import OptionsBar from "components/OptionsBar/OptionsBar";
-import Notice from "components/Notice/Notice";
-import Races from "components/Races/Races";
+import FullWidthLayout from "../../components/Layout/FullWidthLayout";
+import OptionsBar from "../../components/OptionsBar/OptionsBar";
+import Notice from "../../components/Notice/Notice";
+import Races from "../../components/Races/Races";
 import React from "react";
 
 const Index = (props) => {
@@ -29,7 +29,7 @@ const Index = (props) => {
 
   return (
     <>
-      <NextSeo title={title} description={description} keywords={keywords} />
+      <NextSeo title={title} description={description} />
       <FullWidthLayout config={config} showCTABar="true" year={currentYear}>
         <div className="max-w-screen-lg mx-auto font-sans">
           <div className="px-2">

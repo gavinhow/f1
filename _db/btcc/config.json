@@ -1,0 +1,25 @@
+{
+	"siteKey": "btcc",
+	"url": "localhost:3000",
+	"availableYears": [2022],
+	"sessions": ["fp1", "fp2", "qualifying", "race1", "race2", "race3"],
+	"featuredSessions": ["race1"],
+	"collapsedSessions": ["qualifying", "race2", "race3"],
+	"sessionMap": {
+		"fp1":"p1",
+		"fp2":"p2",
+		"qualifying":"qualifying",
+		"race1":"race1",
+		"race2":"race2",
+		"race3":"race3"
+	},
+	"sessionLengths": {
+		"fp1":40,
+		"fp2":40,
+		"qualifying":45,
+		"race1": 20,
+		"race2": 20,
+		"race3": 20
+	},
+	"supportsEmailReminders": false
+}

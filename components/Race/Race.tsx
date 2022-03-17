@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import withTranslation from "next-translate/withTranslation";
 import dayjs from "dayjs";
 import dayjsutc from "dayjs/plugin/utc";
@@ -6,14 +6,11 @@ import dayjstimezone from "dayjs/plugin/timezone";
 import {usePlausible} from "next-plausible";
 import TBCBadge from "../Badges/TBCBadge";
 import CanceledBadge from "../Badges/CanceledBadge";
-import TicketsBadge from "../Badges/TicketsBadge";
 import NextBadge from "../Badges/NextBadge"
 import Toggle from "../Toggle/Toggle";
-import RaceTR from "../Race/RaceTR";
+import RaceTR from "./RaceTR";
 
-const config = require(`../../_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
-
-class Race extends React.Component {
+class Race extends React.Component<any, any> {
 	constructor(props) {
 		super(props);
 
@@ -266,7 +263,7 @@ class Race extends React.Component {
 				if (
 					!dayjs(props.item.sessions[lastEventSessionKey])
 						.add(2, "hours")
-						.isBefore() &&
+						.isBefore(dayjs()) &&
 					!props.item.canceled
 				) {
 					classes += "font-semibold ";

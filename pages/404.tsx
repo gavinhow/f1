@@ -1,7 +1,6 @@
-import Layout from "components/Layout/Layout";
-import Card from "components/Card/Card";
+import Layout from '../components/Layout/Layout';
+import Card from "../components/Card/Card";
 import React from "react";
-import Link from "next/link";
 
 const Custom404 = () => (
 	<>

@@ -1,0 +1,112 @@
+{
+  "races": [
+    {
+      "name": "Oulton Park",
+      "location": "Oulton Park",
+      "latitude": 53.181,
+      "longitude": -2.616,
+      "round": 1,
+      "slug": "britishgt-oulton-park",
+      "localeKey": "britishgt-oulton-park",
+      "sessions": {
+        "fp1": "2022-04-16T08:25:00Z",
+        "fp2": "2022-04-16T10:35:00Z",
+        "qualifying": "2022-04-16T15:00:00Z",
+        "race1": "2022-04-18T10:20:00Z",
+        "race2": "2022-04-18T15:10:00Z"
+      }
+    },
+    {
+      "name": "Silverstone 500",
+      "location": "Silverstone",
+      "latitude": 52.073,
+      "longitude": -1.014,
+      "round": 2,
+      "slug": "britishgt-silverstone",
+      "localeKey": "britishgt-silverstone",
+      "sessions": {
+        "fp1": "2022-05-07T08:30:00Z",
+        "fp2": "2022-05-07T11:05:00Z",
+        "qualifying": "2022-05-07T14:55:00Z",
+        "race1": "2022-05-08T11:20:00Z"
+      }
+    },
+    {
+      "name": "Donington Park",
+      "location": "Donington Park",
+      "latitude": 52.830,
+      "longitude": -1.378,
+      "round": 3,
+      "slug": "britishgt-donington-1",
+      "localeKey": "britishgt-donington",
+      "sessions": {
+        "fp1": "2022-05-28T08:35:00Z",
+        "fp2": "2022-05-28T11:10:00Z",
+        "qualifying": "2022-05-28T15:05:00Z",
+        "race1": "2022-05-29T11:40:00Z"
+      }
+    },
+    {
+      "name": "Snetterton",
+      "location": "Snetterton",
+      "latitude": 52.463,
+      "longitude": 0.944,
+      "round": 4,
+      "slug": "britishgt-snetterton",
+      "localeKey": "britishgt-snetterton",
+      "sessions": {
+        "fp1": "2022-06-25T08:30:00Z",
+        "fp2": "2022-06-25T11:05:00Z",
+        "qualifying": "2022-06-25T15:10:00Z",
+        "race1": "2022-06-26T09:45:00Z",
+        "race2": "2022-06-26T14:45:00Z"
+      }
+    },
+    {
+      "name": "Spa-Francorchamps",
+      "location": "Spa-Francorchamps",
+      "latitude": 50.437,
+      "longitude": 5.972,
+      "round": 5,
+      "tbc": true,
+      "slug": "britishgt-spa",
+      "localeKey": "britishgt-spa",
+      "sessions": {
+        "fp1": "2022-07-23T08:10:00Z",
+        "fp2": "2022-07-23T11:00:00Z",
+        "qualifying": "2022-07-23T15:20:00Z",
+        "race1": "2022-07-24T10:35:00Z"
+      }
+    },
+    {
+      "name": "Brands Hatch",
+      "location": "Brands Hatch",
+      "latitude": 51.358,
+      "longitude": 0.255,
+      "round": 6,
+      "slug": "britishgt-brands-hatch",
+      "localeKey": "britishgt-brands-hatch",
+      "sessions": {
+        "fp1": "2022-09-10T08:30:00Z",
+        "fp2": "2022-09-10T11:05:00Z",
+        "qualifying": "2022-09-10T14:50:00Z",
+        "race1": "2022-09-11T12:30:00Z"
+      }
+    },
+    {
+      "name": "Donington Park",
+      "location": "Donington Park",
+      "latitude": 52.830,
+      "longitude": -1.378,
+      "round": 7,
+      "slug": "britishgt-donington-2",
+      "localeKey": "britishgt-donington",
+      "sessions": {
+        "fp1": "2022-10-15T08:40:00Z",
+        "fp2": "2022-10-15T11:15:00Z",
+        "qualifying": "2022-10-15T16:05:00Z",
+        "race1": "2022-10-16T12:00:00Z"
+      }
+    }
+  ]
+}
